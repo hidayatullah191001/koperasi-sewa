@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('no_telepon', 18)->nullable();
             $table->string('address')->nullable();
             $table->string('photo_profile')->default('default.png');
-            $table->foreignId('role_id')->default(3);
+            $table->foreignId('role_id')->default(2);
+            $table->enum('is_active',['yes', 'no'])->default('yes');
             $table->rememberToken();
             $table->timestamps();
         });

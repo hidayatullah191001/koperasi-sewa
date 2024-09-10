@@ -93,13 +93,13 @@
                 <div class="auth-logo">
                     <a href="index.html" class="logo logo-dark text-center">
                         <span class="logo-lg">
-                            <img src="{{ asset('assets') }}/images/logo-dark.png" alt="" height="22">
+                            <img src="{{ asset('assets') }}/images/logo.jpeg" alt="" height="80">
                         </span>
                     </a>
 
                     <a href="index.html" class="logo logo-light text-center">
                         <span class="logo-lg">
-                            <img src="{{ asset('assets') }}/images/logo-light.png" alt="" height="22">
+                            <img src="{{ asset('assets') }}/images/logo.jpeg" alt="" height="80">
                         </span>
                     </a>
                 </div>
@@ -141,8 +141,6 @@
     <div class="row mt-3">
         <div class="col-12 text-center">
             <p> <a href="auth-recoverpw.html" class="text-white-50 ms-1">Forgot your password?</a></p>
-            <p class="text-white-50">Don't have an account? <a href="auth-register.html" class="text-white ms-1"><b>Sign
-                        Up</b></a></p>
         </div> <!-- end col -->
     </div>
     <!-- end row -->

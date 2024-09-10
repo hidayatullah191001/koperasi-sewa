@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>@yield('title') | Koperasi Jasa Angkutan Putra Mandiri Sukses</title>
+    <title>@yield('title') | Rental dan travel Koperasi Putra Mandiri Sukses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
@@ -56,12 +56,12 @@
     </div>
     <!-- END wrapper -->
 
-    <!-- Right Sidebar -->
+    {{-- <!-- Right Sidebar -->
     @include('includes.right-sidebar')
     <!-- /Right-bar -->
 
     <!-- Right bar overlay-->
-    <div class="rightbar-overlay"></div>
+    <div class="rightbar-overlay"></div> --}}
 
     @stack('prepend-script')
     @include('includes.script')

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\City;
 use App\Models\Role;
 use Illuminate\Database\Seeder;
 
@@ -32,13 +33,58 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Role::create([
-            'code' => 'USR',
-            'name' => 'User',
-        ]);
-
-        Role::create([
             'code' => 'GUEST',
             'name' => 'Guest',
+        ]);
+
+        City::create([
+            'nama' => 'Luwuk',
+            'type' => 'Asal',
+        ]);
+        City::create([
+            'nama' => 'Palu',
+            'type' => 'Asal'
+        ]);
+
+        City::create([
+            'nama' => 'Makasar',
+            'type' => 'Asal'
+        ]);
+
+        City::create([
+            'nama' => 'Toili',
+            'type' => 'Tujuan'
+        ]);
+
+        City::create([
+            'nama' => 'Toili Barat',
+            'type' => 'Tujuan'
+        ]);
+
+        City::create([
+            'nama' => 'Panduuke',
+            'type' => 'Tujuan'
+        ]);
+
+        City::create([
+            'nama' => 'Baturube',
+            'type' => 'Tujuan'
+        ]);
+        City::create([
+            'nama' => 'Bungku',
+            'type' => 'Tujuan'
+        ]);
+        City::create([
+            'nama' => 'Balantak',
+            'type' => 'Tujuan'
+        ]);
+        City::create([
+            'nama' => 'Bualemo',
+            'type' => 'Tujuan'
+        ]);
+        City::create([
+            'nama' => 'Pagimana',
+            'type' => 'Tujuan'
         ]);
     }
 }

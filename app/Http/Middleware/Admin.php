@@ -17,7 +17,7 @@ class Admin
     public function handle(Request $request, Closure $next): Response
     {
         if (Auth::check()) {
-            if (Auth::user()->role_id != null && Auth::user()->role->code == 'ADM' || Auth::user()->role->code == 'SUADM') {
+            if (Auth::user()->role_id != null  && Auth::user()->role->code == 'ADM' || Auth::user()->role->code == 'SUADM') {
                 return $next($request);
             }
             return redirect()->route('login')->with('error', 'You don\'t have permission to access this.');

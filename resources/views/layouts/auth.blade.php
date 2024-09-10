@@ -26,7 +26,7 @@
     </div>
 
     <footer class="footer footer-alt text-white-50">
-       <script>document.write(new Date().getFullYear())</script> &copy; Koperasi Jasa Angkutan Putra Mandiri Sukses</a> 
+       <script>document.write(new Date().getFullYear())</script> &copy;Rental dan travel Koperasi Putra Mandiri Sukses</a> 
     </footer>
 
     @include('includes.script')

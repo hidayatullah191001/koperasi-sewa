@@ -3,9 +3,10 @@
 namespace App\Helpers;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Str;
 
-class MyHelper
+class MyHelpers
 {
     public static function ubahFormatTanggal($tanggal)
     {
@@ -111,5 +112,23 @@ class MyHelper
         }
 
         return ['initials' => $initials, 'fontSize' => 50, 'y' => 70];
+    }
+
+    public static function calculateAge($birthdate)
+    {
+        // Menggunakan Carbon untuk menghitung umur
+        $birthDate = Carbon::parse($birthdate);
+        return $birthDate->age;
+    }
+
+    public static function changeRupiahtoInteger($value){
+        $cleanedString = preg_replace("/[^0-9\.]/", "", $value);
+        $integerValue = (int) $cleanedString;
+        return $integerValue;
+    }
+
+    public static function changeIntegertoRupiah($value){
+        $rupiah = number_format($value, 0, '', '.');
+        return "Rp. ".$rupiah .'.00';
     }
 }

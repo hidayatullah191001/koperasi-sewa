@@ -9,17 +9,17 @@
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{ asset('assets') }}/images/favicon.ico">
 
 		<!-- App css -->
-		<link href="../assets/css/config/modern/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
-		<link href="../assets/css/config/modern/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+		<link href="{{ asset('assets') }}/css/config/modern/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+		<link href="{{ asset('assets') }}/css/config/modern/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
 
-		<link href="../assets/css/config/modern/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
-		<link href="../assets/css/config/modern/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+		<link href="{{ asset('assets') }}/css/config/modern/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+		<link href="{{ asset('assets') }}/css/config/modern/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
 
 		<!-- icons -->
-		<link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('assets') }}/css/icons.min.css" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -90,7 +90,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p class="text-white-50">Return to <a href="index.html" class="text-white ms-1"><b>Home</b></a></p>
+                                <p class="text-white-50">Return to <a href="{{ env('APP_URL') }}" class="text-white ms-1"><b>Home</b></a></p>
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->
@@ -103,15 +103,15 @@
         </div>
         <!-- end page -->
 
-        <footer class="footer footer-alt">
-            2015 - <script>document.write(new Date().getFullYear())</script> &copy; UBold theme by <a href="" class="text-white-50">Coderthemes</a> 
-        </footer>
-
+        <footer class="footer footer-alt text-white-50">
+            <script>document.write(new Date().getFullYear())</script> &copy; Koperasi Jasa Angkutan Putra Mandiri Sukses</a> 
+         </footer>
+         
         <!-- Vendor js -->
-        <script src="../assets/js/vendor.min.js"></script>
+        <script src="{{ asset('assets') }}/js/vendor.min.js"></script>
 
         <!-- App js -->
-        <script src="../assets/js/app.min.js"></script>
+        <script src="{{ asset('assets') }}/js/app.min.js"></script>
 
     </body>
 

@@ -60,6 +60,10 @@ class LoginController extends Controller
             // Regenerate session
             $request->session()->regenerate();
             $user = Auth::user();
+            if ($user->is_active != 'yes') {
+                Auth::logout();
+                return redirect()->route('login')->with('error', 'Your account is not active. Please contact administrator.');
+            }
             // Check role_id
             if ($user->role_id != null) {
                 if ($user->role->code == 'SUADM') {

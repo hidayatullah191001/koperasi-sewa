@@ -25,6 +25,7 @@ class User extends Authenticatable
         'address',
         'photo_profile',
         'role_id',
+        'is_active'
     ];
 
     protected $with = [
@@ -54,5 +55,9 @@ class User extends Authenticatable
     public function role()
     {
         return $this->belongsTo(Role::class);
+    }
+
+    public function hasRole($role){
+        return $this->role->code === $role;
     }
 }
